@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SkiaSharpPreviewerDemo"
+             xmlns:custom="clr-namespace:CustomLibrary;assembly=CustomLibrary"
+             x:Class="SkiaSharpPreviewerDemo.MainPage">
+
+    <StackLayout Padding="20" Spacing="20">
+
+        <custom:CustomDerivedControl HeightRequest="100" HorizontalOptions="FillAndExpand"
+                                     BackgroundColor="Orange" TextColor="OrangeRed"
+                                     Text="Custom Derived Control" AutoSizeText="true" />
+
+        <custom:CustomContainedControl HeightRequest="100" HorizontalOptions="FillAndExpand" Padding="0"
+                                       BackgroundColor="Pink" TextColor="HotPink"
+                                       Text="Custom Contained Control" AutoSizeText="true" />
+
+        <local:LocalControl HeightRequest="100" HorizontalOptions="FillAndExpand"
+                            BackgroundColor="SkyBlue" TextColor="CornflowerBlue"
+                            Text="Local Control" AutoSizeText="true" />
+
+    </StackLayout>
+
+</ContentPage>
